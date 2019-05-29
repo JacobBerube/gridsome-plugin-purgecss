@@ -29,7 +29,7 @@ class PurgeCssPlugin {
 
     api.chainWebpack(config => {
       config.module
-        .rule('css') // or sass, scss, less, postcss, stylus
+        .rule('scss') // or sass, scss, less, postcss, stylus
         .oneOf('normal') // or module
         .use('postcss-loader')
         .tap(options => {
